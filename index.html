@@ -5,73 +5,98 @@
 <title>Vibes NYC</title>
 
 <style>
-
 body{
     margin:0;
     font-family: Arial, Helvetica, sans-serif;
     color:white;
-    background: linear-gradient(to bottom, #000000, #111111);
+    background: linear-gradient(to bottom, #050505 0%, #0d0d0d 55%, #111 100%);
+    overflow-x:hidden;
 }
 
-/* skyline silhouette effect */
-body::before{
-    content: "";
-    position: fixed;
+.skyline{
+    position:fixed;
     bottom:0;
     left:0;
     width:100%;
-    height:50%;
-    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Lower_Manhattan_skyline_-_June_2017.jpg/1280px-Lower_Manhattan_skyline_-_June_2017.jpg') no-repeat bottom center;
-    background-size: cover;
-    opacity:0.3;
+    height:45vh;
     z-index:-1;
+    opacity:0.28;
 }
 
 .hero{
     text-align:center;
-    padding:100px 20px;
+    padding:110px 20px 80px 20px;
+    background: rgba(0,0,0,0.55);
 }
 
 .hero h1{
-    font-size:60px;
-    margin-bottom:10px;
+    font-size:64px;
+    margin:0 0 12px 0;
 }
 
 .hero p{
     font-size:18px;
-    color:lightgray;
+    color:#d3d3d3;
+    margin:0;
 }
 
 .container{
     max-width:800px;
-    margin:40px auto;
-    padding:25px;
-    background: rgba(0,0,0,0.85);
+    margin:50px auto;
+    padding:28px;
+    background: rgba(0,0,0,0.82);
     border-radius:12px;
+    box-sizing:border-box;
 }
 
 .story{
-    line-height:1.7;
+    line-height:1.8;
     font-size:16px;
 }
 
 .credit{
     text-align:center;
-    margin-top:20px;
-    color:lightgray;
+    margin-top:22px;
+    color:#cfcfcf;
     font-size:14px;
 }
 
 footer{
     text-align:center;
-    padding:20px;
+    padding:24px;
     color:gray;
 }
-
 </style>
 </head>
 
 <body>
+
+<svg class="skyline" viewBox="0 0 1440 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="430" width="1440" height="70" fill="black"/>
+    <rect x="40" y="360" width="70" height="70" fill="black"/>
+    <rect x="85" y="320" width="18" height="40" fill="black"/>
+    <rect x="130" y="300" width="55" height="130" fill="black"/>
+    <rect x="150" y="245" width="10" height="55" fill="black"/>
+    <rect x="205" y="335" width="65" height="95" fill="black"/>
+    <rect x="285" y="260" width="80" height="170" fill="black"/>
+    <rect x="315" y="180" width="20" height="80" fill="black"/>
+    <rect x="385" y="310" width="55" height="120" fill="black"/>
+    <rect x="455" y="230" width="85" height="200" fill="black"/>
+    <rect x="490" y="120" width="18" height="110" fill="black"/>
+    <rect x="555" y="285" width="45" height="145" fill="black"/>
+    <rect x="615" y="205" width="90" height="225" fill="black"/>
+    <rect x="650" y="70" width="20" height="135" fill="black"/>
+    <rect x="725" y="320" width="55" height="110" fill="black"/>
+    <rect x="795" y="245" width="100" height="185" fill="black"/>
+    <rect x="835" y="110" width="22" height="135" fill="black"/>
+    <rect x="915" y="300" width="60" height="130" fill="black"/>
+    <rect x="995" y="220" width="85" height="210" fill="black"/>
+    <rect x="1030" y="160" width="14" height="60" fill="black"/>
+    <rect x="1100" y="335" width="55" height="95" fill="black"/>
+    <rect x="1175" y="280" width="75" height="150" fill="black"/>
+    <rect x="1270" y="345" width="60" height="85" fill="black"/>
+    <rect x="1345" y="370" width="50" height="60" fill="black"/>
+</svg>
 
 <div class="hero">
     <h1>VIBES NYC</h1>
@@ -79,33 +104,29 @@ footer{
 </div>
 
 <div class="container">
+    <h2>Brand Story</h2>
 
-<h2>Brand Story</h2>
+    <div class="story">
+        <p>
+        Vibes NYC is more than just a clothing brand. It represents the energy, culture, and lifestyle of New York City, especially places like the Bronx where expression, music, and movement are part of everyday life. Built from a background of hip hop and sports, the brand reflects confidence, discipline, and the drive to stand out.
+        </p>
 
-<div class="story">
+        <p>
+        The idea for Vibes NYC came from growing up around hip hop culture and competitive environments where style and presence meant everything. Whether it was music, streetwear, or sports, there was always a strong sense of identity tied to how you carried yourself.
+        </p>
 
-<p>
-Vibes NYC is more than just a clothing brand. It represents the energy, culture, and lifestyle of New York City, especially places like the Bronx where expression, music, and movement are part of everyday life. Built from a background of hip hop and sports, the brand reflects confidence, discipline, and the drive to stand out.
-</p>
+        <p>
+        The mission of Vibes NYC is to give people clothing that matches their mindset and energy. It is made for individuals who are focused, creative, and always pushing forward.
+        </p>
 
-<p>
-The idea for Vibes NYC came from growing up around hip hop culture and competitive environments where style and presence meant everything. Whether it was music, streetwear, or sports, there was always a strong sense of identity tied to how you carried yourself.
-</p>
+        <p>
+        Vibes NYC is not just about fashion, it is about representing where you come from and staying true to yourself.
+        </p>
+    </div>
 
-<p>
-The mission of Vibes NYC is to give people clothing that matches their mindset and energy. It is made for individuals who are focused, creative, and always pushing forward.
-</p>
-
-<p>
-Vibes NYC is not just about fashion, it is about representing where you come from and staying true to yourself.
-</p>
-
-</div>
-
-<div class="credit">
-Created by Kyri Jenkins
-</div>
-
+    <div class="credit">
+        Created by Kyri Jenkins
+    </div>
 </div>
 
 <footer>
